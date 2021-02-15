@@ -1,3 +1,4 @@
+
 backpack = ["food", "water", "map","torch"]
 
 def add(item):
@@ -12,6 +13,7 @@ print(backpack)
 
 for item in backpack:
     print(item)
+    print("hello")
 
 #write a program to manage a backpack list. 
 #The program needs functions that can add, print oand remove items from the backpack
