@@ -12,4 +12,10 @@ What do you want to do today?
             break
         except:
             print("choose a valid option!")
+        print("hello")
 
+mainmenu()
+
+def view():
+    backpack.list
+    
