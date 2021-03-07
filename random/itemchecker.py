@@ -1,7 +1,5 @@
-#write a program to manage a backpack list. 
-#The program needs functions that can add, print oand remove items from the backpack
 backpack_title = [("ID", "NAME", "DESCRIPTION")]
-backpack = [("id", "Chocolate", "Yummy" )]
+backpack = [("id", "Chocolate", "Yummy" ), ("a", "a", "a")]
 
 def add_item():
     item_id = len(backpack)
@@ -24,8 +22,10 @@ def remove_item():
 
 def check_item():
     wanted_item = input("Enter an item that you would like to check if it's in the backpack. ")
-    check_thing = backpack.count(wanted_item)
-    if check_thing == 1:
+    found_item = [item for item in backpack if item[1] == wanted_item]
+    print(found_item)
+
+    if backpack[1] in backpack == wanted_item:
         print("It's in the backpack!")
     else:
         not_in_backpack = input("It's not in the backpack. Would you like to add it in the backpack? ")
